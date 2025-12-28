@@ -10,7 +10,7 @@
                     <div class="button-mobile"></div>
                     <ul>
                         <li class='active'><a href='#'>الرئيسية</a></li>
-                        <li><a href='#'>Services</a>
+                        <li><a href='#'>Services</a> 
                             <!-- <ul>
                                 <li><a href='#'>Services 1</a></li>
                                 <li><a href='#'>Services 2</a>
