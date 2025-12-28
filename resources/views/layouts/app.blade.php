@@ -13,18 +13,22 @@
     <meta name="url" content="{{ url('/') }}">
     @yield('meta')
     <link rel="icon" type="image/png" href="{{ asset('img/fav_icon.png') }}">
-
+  
     <!-- Load Default CSS -->
+  
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    
+     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    @yield('styles')
     </head>
-    <body>
-        @include('layouts.header')
-
-        <main>
+    <body> 
+      <main>
             
         </main>
+        @include('layouts.header')
+
+       @yield('content')
 
         @include('layouts.footer')
 
