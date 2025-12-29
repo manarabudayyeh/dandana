@@ -22,10 +22,18 @@
      <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @yield('styles')
     </head>
+    <script>
+    window.addEventListener("load", function () {
+        document.getElementById("loader").style.display = "none";
+    });
+</script>
     <body> 
       <main>
-            
+        
         </main>
+        <div id="loader">
+    <div class="chip"></div>
+</div>
         @include('layouts.header')
 
        @yield('content')

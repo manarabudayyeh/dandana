@@ -25,7 +25,7 @@
                         <!-- </li> -->
                         <li><a href='#about'>نبذة عنا</a></li>
                         <li><a href='#products'>منتجاتنا</a></li> 
-                        <li><a href='#'>تواصل معنا</a></li>
+                        <li><a href='#contact'>تواصل معنا</a></li>
                     </ul>
                 </nav>
             </div>

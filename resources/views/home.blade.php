@@ -168,7 +168,7 @@
 </section>
 </div>
 
-<div class="contact-section" id="aontact">
+<div class="contact-section" id="contact">
 <div class="inner-width">
 <h1>تواصل معنا</h1>
 <div class="border"></div>

@@ -647,3 +647,38 @@ footer .type3 li{
 #cssmenu .open li {
     text-align: right;
 }
+
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Chip shape */
+.chip {
+    background: url(../img/Falafel_chip.png) no-repeat center center;
+	width: 150px;
+	height: 150px;	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+    border-radius: 50%;
+    /* box-shadow:
+        inset -3px -3px 6px rgba(0,0,0,0.15),
+        inset 3px 3px 6px rgba(255,255,255,0.3); */
+    animation: chip-spin 10s linear infinite;
+}
+
+/* Spin animation */
+@keyframes chip-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
