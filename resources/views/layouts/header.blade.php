@@ -24,9 +24,8 @@
                             </ul> -->
                         <!-- </li> -->
                         <li><a href='#about'>نبذة عنا</a></li>
-                        <li><a href='#'>منتجاتنا</a></li> 
+                        <li><a href='#products'>منتجاتنا</a></li> 
                         <li><a href='#'>تواصل معنا</a></li>
-                        <li><a href='#'></a></li>
                     </ul>
                 </nav>
             </div>

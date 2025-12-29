@@ -35,10 +35,27 @@ ul {
     list-style: none;
 }
 
+/* The entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* width of vertical scrollbar */
+  height: 12px; /* height of horizontal scrollbar */
+}
+
+/* The draggable handle */
+::-webkit-scrollbar-thumb {
+  background-color: #f14949;
+  border-radius: 6px;
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
 header {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(to right, #c2dac2, #4a824a,#61ac61,#a0812c,#a39255,#e11b23,#ca6969);
+    background-image: linear-gradient(to right, #c2dac2, #498549db, #61ac61, #dbb754, #d5383e, #e11b23db, #ca6969);
     z-index: 99;
 }
 /*---------header close----------*/
@@ -96,7 +113,7 @@ header i.fa.fa-mobile {
 }
 .header-main {
     padding: 10px 0;
-    border-top: 1px solid #424242;
+    
 }
 /*-----------header-top Close------------*/
 /*-----------header-menu------------*/
@@ -108,7 +125,7 @@ nav#cssmenu ul {
 .logo img {
     max-width: 150px;
 }
-.logo a{color:#e31b22;}
+.logo a{color:#e92f35;}
 #cssmenu,#cssmenu ul,#cssmenu ul li,#cssmenu ul li a,#cssmenu #head-mobile{border:0;list-style:none;line-height:1;display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #cssmenu:after,#cssmenu > ul:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
 #cssmenu #head-mobile{display:none}
@@ -125,8 +142,8 @@ nav#cssmenu ul {
     color: #fff;
 }
 #cssmenu > ul > li:hover, #cssmenu ul li.active:hover, #cssmenu ul li.active, #cssmenu ul li.has-sub.active:hover {
-    background: #e31b22!important;
-    box-shadow: 0 5px 6px #e31b22;
+    background: #e92f35!important;
+    box-shadow: 0 5px 6px #e92f35;
     -webkit-transition: background .3s ease;
     -ms-transition: background .3s ease;
     transition: background .3s ease;
@@ -179,6 +196,9 @@ nav#cssmenu ul {
 @media screen and (max-width:991px){
 .logo{top:0;left: 0;width:100%;height:46px;text-align:center;padding:10px 0 0 0 ;float:none}
 .logo2{display:none}
+.logo img{
+    max-width: 125px;
+}
 nav{width:100%;}
 #cssmenu{width:100%}
 #cssmenu ul{width:100%;display:none}
@@ -220,11 +240,12 @@ nav{width:100%;}
 }
 
 
+
 .carousel.slide img{
     width: 100%;
 }
 div#slider-home .carousel-item::before {
-    background: #2b282850;
+    background: #2b282825;
     content: "";
     position: absolute;
     width: 100%;
@@ -259,17 +280,30 @@ div#slider-home .carousel-item::before {
 
 .about-section {
     
-    width: 80%; /* Set a specific width */
+    width: 90%; /* Set a specific width */
   margin-left: auto;
   margin-right: auto;
   /* Shorthand for top/bottom margin 20px, left/right margin auto */
     margin: 45px auto; 
-    background-image: linear-gradient(to right, #6ba76b, #779977);
+    background-image: linear-gradient(to right, #e09035d0, #ff623ccc);
     padding: 25px 0;
-    border-top-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-    border: 6px solid #e11b23;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border: 6px solid #ff454c;
 
+}
+.about.content_section{
+    display: flex;
+}
+.about .col-md-6{
+    width: 50%;
+}
+.about .col-md-6.about-image{
+    float: left;
+}
+.about-image img{
+    width: 75%;
+    border-radius: 8%;
 }
 
 .inner-width {
@@ -284,10 +318,12 @@ div#slider-home .carousel-item::before {
 }
 
 .border {
-    width: 100px;
+    width: 120px;
     height: 4px;
-    background: #e31b22;
+    background: #ff454c;
     margin: 14px auto;
+    border: none !important;
+    border-radius: 55%;
 }
 
 .about-section-row {
@@ -467,14 +503,16 @@ transform: rotate(360deg);
 .sliding-sprite {
   width: 100vw;
   overflow: hidden;
-  background: #000;      /* optional backdrop */
+  background: transparent;      
 }
 
 .sprite-track {
   display: flex;
   flex-wrap: nowrap;
 }
-
+.sprite-track a{
+    pointer-events: none;
+}
 .sliding-sprite figure {
   flex: 0 0 auto;
   margin: 0;
@@ -482,12 +520,11 @@ transform: rotate(360deg);
 
 .sliding-sprite img {
   display: block;
-  height: 350px;         /* adjust for your design */
+  height: 350px;         
   width: auto;
   object-fit: cover;
 }
 
-/* Smaller strip height on mobile if you like */
 @media (max-width: 768px) {
   .sliding-sprite img {
     height: 200px;
@@ -533,15 +570,28 @@ transform: rotate(360deg);
 }
 
 
+.product-section {
+    
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin: 45px auto; 
+    background-image: linear-gradient(to right, #e09035d0, #ff623ccc);
+    padding: 25px 0;
+
+
+}
+.product-section h1{
+text-align: center;
+}
 
 .contact-section{
    
-    width: 100%; /* Set a specific width */
-  margin-left: auto;
-  margin-right: auto;
-  /* Shorthand for top/bottom margin 20px, left/right margin auto */
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
     margin: 45px auto; 
-    background-image: linear-gradient(to right, #6ba76b, #779977);
+    background-image: linear-gradient(to right, #e09035d0, #ff623ccc);
     padding: 25px 0;
     border: none;
 
@@ -549,4 +599,51 @@ transform: rotate(360deg);
 }
 .contact-section h1{
 text-align: center;
+}
+
+@media screen and (max-width:991px){
+.about.content_section{
+    display: block;
+}
+.about .col-md-6{
+    width: 100%;
+    max-width: 90%;
+}
+.about .col-md-6.about-image{
+    float: none;
+}
+.about-image img{
+        width: 100%;
+        height: 302px;
+}
+}
+.contact-section p{
+color: #fff
+}
+
+.contact-section .type3{
+    margin-bottom: 20px;
+}
+footer .type3 li{
+    text-align: center;
+}
+.type3 li, .type3 li i, .type3 li a{
+    color: #fff;
+    text-align: right;
+}
+.contact-section-row {
+    text-align: center;
+}
+.contact-section-row .type3 li{
+    text-align: center;
+}
+.contact-section-row iframe{
+    text-align: center;
+}
+.gmap_canvas iframe,.product-section{
+    overflow: hidden;
+}
+
+#cssmenu .open li {
+    text-align: right;
 }

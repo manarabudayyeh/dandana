@@ -45,46 +45,50 @@
           <div class="border"></div>
           <div class="about-section-row">
             <div class="" dir="rtl">
-              <div class="about">
+              <div class="about content_section">
+                <div class="col-md-6 col-sm-12 about-text">
                 <p>
 تأسست شركة دندانة للصناعات الغذائية عام ٢٠٠٤ بجهود عائلية ورأس مال متواضع، وكما هو الحال مع جميع البدايات، كانت دندانة شركة صغيرة تعتمد على خط إنتاج واحد في مبنى مستأجر، وتنتج ثلاثة أنواع فقط من رقائق البطاطس، ولديها سيارتان للتوزيع. وبفضل الرؤية الثاقبة والخبرة الإدارية والتصنيعية، تحققت الشركة بفضل الله نمو سريع، حيث شيدت مبنىً جديدًا كبيرًا وأضافت خمسة خطوط إنتاج جديدة.
+</p>
+<p>
 
 جاء هذا النمو نتيجةً للابتكار والنزاهة والالتزام بالجودة وولاء جميع العاملين في دندانة، حيث تحولت شركتنا من شركة صغيرة إلى واحدة من الشركات الرائدة في مجال الصناعات الغذائية في الأردن، وتنتشر منتجاتها (أربعة عشر منتجًا رئيسيًا) في جميع أنحاء المملكة من الشمال إلى الجنوب، بفضل أسطول التوزيع ومندوبي المبيعات الأكفاء.
+</p>
+              </div>
 
-تمتلك دندانة الآن أسطولًا كبيرًا من مركبات التوزيع، ويعمل بها ثلاثمائة عامل من ذوي الكفاءات الأردنية.
-
-لا بد من التأكيد على أننا ما كنا لنصل إلى ما نحن عليه اليوم لولا الجهود الحثيثة للإدارة الرشيدة وولاء جميع العاملين في دندانة.
-
-داندانا هي قصة كفاح ونجاح، وكيفية استغلال جميع مواردها للارتقاء بها لتصبح صناعة عظيمة.                </p>
-                
+              <div class="col-md-6 col-sm-12 about-image">
+                <img src="{{asset('img/about_img.webp')}}" alt="about_us_image">
+              </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+  <div class="product-section" id="products">
+          
+          <h1>منتجاتنا</h1>
+          <div class="border"></div>
       <section class="sliding-sprite"
          data-speed="60"
          data-direction="right"
          aria-label="Scrolling image strip">
 
   <div class="sprite-track">
-
     <figure>
        <a href="#"
-         data-tooltip=" دندنة ستيكس"
          data-mobile-tooltip="true">
         <img
-          src="{{asset('img/products/chipsFour.webp')}}"
-          alt="product_four">
+          src="{{asset('img/products/chipsOne.png')}}"
+          alt="product_one">
       </a>
     </figure>
 
     <figure>
       <a href="#"
-         data-tooltip="دندنة بونا"
          data-mobile-tooltip="true">
         <img
-          src="{{asset('img/products/chipsTwo.webp')}}"
+          src="{{asset('img/products/chipsTwo.png')}}"
           alt="product_two">
       </a>
     </figure>
@@ -92,10 +96,9 @@
     
     <figure>
       <a href="#"
-         data-tooltip="دندنة فلافل"
          data-mobile-tooltip="true">
         <img
-          src="{{asset('img/products/chipsThree.webp')}}"
+          src="{{asset('img/products/chipsThree.png')}}"
           alt="product_three">
       </a>
     </figure>
@@ -106,56 +109,96 @@
     <a href="#"
          target="_blank"
          rel="noopener"
-         data-tooltip="دندنة حريقة"
          data-mobile-tooltip="true">
         <img
-          src="{{asset('img/products/chipsOne.webp')}}"
-          alt="product_one">
+          src="{{asset('img/products/chipsFour.png')}}"
+          alt="product_four">
       </a>
      
     </figure>
 
     <figure>
       <a href="#"
-         data-tooltip="دندنة تروبا"
          data-mobile-tooltip="true">
        <img
-          src="{{asset('img/products/chipsFive.webp')}}"
+          src="{{asset('img/products/chipsFive.png')}}"
           alt="product_five">
+      </a>
+    </figure>
+
+    <figure>
+      <a href="#"
+         data-mobile-tooltip="true">
+       <img
+          src="{{asset('img/products/chipsSix.png')}}"
+          alt="product_six">
+      </a>
+    </figure>
+
+    <figure>
+      <a href="#"
+         data-mobile-tooltip="true">
+       <img
+          src="{{asset('img/products/chipsEight.png')}}"
+          alt="product_eight">
+      </a>
+    </figure>
+
+    <figure>
+      <a href="#"
+         data-mobile-tooltip="true">
+       <img
+          src="{{asset('img/products/chipsSeven.png')}}"
+          alt="product_seven">
+      </a>
+    </figure>
+
+
+
+    <figure>
+      <a href="#"
+         data-mobile-tooltip="true">
+       <img
+          src="{{asset('img/products/chipsNine.png')}}"
+          alt="product_nine">
       </a>
     </figure>
 
   </div>
 </section>
-
-
-      
-
-
-      <div class="contact-section" id="aontact">
-        <div class="inner-width">
-          <h1>تواصل معنا</h1>
-          <div class="border"></div>
-          <div class="about-section-row">
-            <div class="" dir="rtl">
-              <div class="col-md-6 starters">
-  <!-- <div class="col-wrapper-10">
-    <h1>Contact Us</h1>
-    
-    <p>Thank you for visiting us.  If you have any questions or comments about a recent visit or order please let us know.</p>
-    [contact-form-7 id="26" title="Contact form 1"]
-  </div> -->
 </div>
-<!-- Right Column -->
-<div class="col-md-6 starters">
-  <div class="col-wrapper-10">
-    <div id="map-canvas"></div>
-    <script src="//maps.googleapis.com/maps/api/js?extension=.js&output=embed"></script>
+
+<div class="contact-section" id="aontact">
+<div class="inner-width">
+<h1>تواصل معنا</h1>
+<div class="border"></div>
+<div class="contact-section-row">
+<div class="" dir="rtl">
+              
+                
+ <p style="color:#fff;">
+لأي استفسارات أو ملاحظات، لا تتردد في التواصل معنا عبر الوسائل التالية:
+ </p>
+ <ul class="type3">
+<li><i class="fa fa-phone"></i>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  064164428 </li>
+<li><i class=" fa fa-envelope"></i>
+<a href="mailto:info@dandana.jo" title="Write a E-Mail">  info@dandana.jo</a></li>
+</ul>
+             
+
+              
+<div class="mapouter" style="position:relative; text-align:right;">
+  <div class="gmap_canvas" style="overflow:hidden; background:none!important; height:350px;">
+    <iframe width="500px" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=%D8%AF%D9%86%D8%AF%D9%86%D8%A9%20%D8%B4%D9%8A%D8%A8%D8%B3&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
   </div>
+  <a href="https://norsumediagroup.com/embed-google-map-website-free" target="_blank" rel="noopener noreferrer" class="gme-generated-link">Embed Map on Website for Free</a>
+  <style>
+   .mapouter{position:relative;text-align:right;} .gmap_canvas{overflow:hidden;background:none!important;} .gmap_canvas iframe{width:100%;height:100%;} .mapouter a{display:block;font-size:0.85em;text-align:center;padding:5px 0;color:#6c757d;text-decoration:none;} .gme-generated-link{display:none!important;}
+  </style>
 </div>
-</div>
+              
+             </div>
             </div>
-          </div>
         </div>
       </div>
 

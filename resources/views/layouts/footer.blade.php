@@ -5,7 +5,7 @@
       <div class="col-md-6 col-sm-6 text-center">
         <!--Column1-->
         <div class="footer-pad">
-          <h4>حول الموقع</h4>
+          <h4>للتواصل</h4>
           <ul class="type3">
 <li><i class="fa fa-map-marker"></i>    &nbsp;&nbsp; &nbsp; عمان - الأردن</li>
 <li><i class="fa fa-phone"></i>   &nbsp;&nbsp;&nbsp;&nbsp;  064164428 </li>
